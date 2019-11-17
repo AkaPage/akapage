@@ -7,7 +7,8 @@ module.exports = {
   },
   extends: [
     'standard',
-    'standard-react'
+    'standard-react',
+    'prettier/react'
   ],
   globals: {
     Atomics: 'readonly',
