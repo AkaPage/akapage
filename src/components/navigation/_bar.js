@@ -8,11 +8,11 @@ import {
 const Bar = withStyle(FlexContainer, props => {
   const style = props.style || {}
 
-  return {
-    background: style.background || 'grey',
-    height: style.height || '50px',
-    width: style.width || '100%'
-  }
+  style.background = style.background || 'grey'
+  style.height = style.height || '50px'
+  style.width = style.width || '100%'
+
+  return style
 })
 
 Bar.propTypes = {

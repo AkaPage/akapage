@@ -4,16 +4,16 @@ import { styled } from 'styletron-react'
 const Item = styled('div', props => {
   const style = props.style || {}
 
-  return {
-    order: style.order || 0,
-    /*
-    flexGrow: style.flexGrow || 1,
-    flexShrink: style.flexShrink || 0,
-    flexBasis: style.flexBasis || 'auto',
-    */
-    flex: style.flex || `${style.flexGrow || 1} ${style.flexShrink || 0} ${style.flexBasis || 'auto'}`,
-    alignSelf: style.alignSelf || 'flex-start'
-  }
+  style.order = style.order || 0
+  /*
+  style.flexGrow = style.flexGrow || 1
+  style.flexShrink = style.flexShrink || 0
+  style.flexBasis = style.flexBasis || 'auto'
+  */
+  style.flex = style.flex || `${style.flexGrow || 1} ${style.flexShrink || 0} ${style.flexBasis || 'auto'}`
+  style.alignSelf = style.alignSelf || 'flex-start'
+
+  return style
 })
 
 Item.propTypes = {
