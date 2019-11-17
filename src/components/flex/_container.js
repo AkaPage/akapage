@@ -2,20 +2,20 @@ import PropTypes from 'prop-types'
 import { styled } from 'styletron-react'
 
 const Container = styled('div', props => {
-  const style = Object.assign({}, props.style || {})
+  const styles = Object.assign({}, props['aka-styles'] || {})
 
-  style.display = style.display || 'flex'
-  style.flexDirection = style.flexDirection || 'row'
-  style.flexWrap = style.flexWrap || 'wrap'
-  style.justifyContent = style.justifyContent || 'flex-start'
-  style.alignItems = style.alignItems || 'flex-start'
-  style.alignContent = style.alignContent || 'flex-start'
+  styles.display = styles.display || 'flex'
+  styles.flexDirection = styles.flexDirection || 'row'
+  styles.flexWrap = styles.flexWrap || 'wrap'
+  styles.justifyContent = styles.justifyContent || 'flex-start'
+  styles.alignItems = styles.alignItems || 'flex-start'
+  styles.alignContent = styles.alignContent || 'flex-start'
 
-  return style
+  return styles
 })
 
 Container.propTypes = {
-  style: PropTypes.object
+  styles: PropTypes.object
 }
 
 export default Container

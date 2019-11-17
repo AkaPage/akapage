@@ -1,16 +1,28 @@
 import React from 'react'
-import 'normalize.css'
 
 import {
-  Container as FlexContainer,
-  Item as FlexItem
-} from './components/flex'
-import {
-  Bar as NavigationBar
+  Bar as NavigationBar,
+  BarItem as NavigationBarItem
 } from './components/navigation'
+import { Link } from './components/typography'
+
+import 'normalize.css'
+
+import './statics/stylesheets/fonts/NotoSansKR.css'
 
 export default () => {
   return (
-    <NavigationBar />
+    <div>
+      <NavigationBar
+        styles={{
+          background: 'black',
+          boxShadow: 'none'
+        }}
+      >
+        <NavigationBarItem primary>
+          <Link href='/'>Seia-Soto</Link>
+        </NavigationBarItem>
+      </NavigationBar>
+    </div>
   )
 }

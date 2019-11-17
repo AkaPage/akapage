@@ -2,22 +2,22 @@ import PropTypes from 'prop-types'
 import { styled } from 'styletron-react'
 
 const Item = styled('div', props => {
-  const style = Object.assign({}, props.style || {})
+  const styles = Object.assign({}, props['aka-styles'] || {})
 
-  style.order = style.order || 0
+  styles.order = styles.order || 0
   /*
-  style.flexGrow = style.flexGrow || 1
-  style.flexShrink = style.flexShrink || 0
-  style.flexBasis = style.flexBasis || 'auto'
+  styles.flexGrow = styles.flexGrow || 1
+  styles.flexShrink = styles.flexShrink || 0
+  styles.flexBasis = styles.flexBasis || 'auto'
   */
-  style.flex = style.flex || `${style.flexGrow || 1} ${style.flexShrink || 0} ${style.flexBasis || 'auto'}`
-  style.alignSelf = style.alignSelf || 'flex-start'
+  styles.flex = styles.flex || `${styles.flexGrow || 1} ${styles.flexShrink || 0} ${styles.flexBasis || 'auto'}`
+  styles.alignSelf = styles.alignSelf || 'flex-start'
 
-  return style
+  return styles
 })
 
 Item.propTypes = {
-  style: PropTypes.object
+  styles: PropTypes.object
 }
 
 export default Item

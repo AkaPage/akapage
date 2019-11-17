@@ -6,17 +6,23 @@ import {
 } from '../flex'
 
 const Bar = withStyle(FlexContainer, props => {
-  const style = Object.assign({}, props.style || {})
+  const styles = Object.assign({}, props['aka-styles'] || {})
 
-  style.background = style.background || 'grey'
-  style.height = style.height || '50px'
-  style.width = style.width || '100%'
+  // NOTE: Styles to parent component
+  styles.justifyContent = styles.justifyContent || 'space-around'
+  styles.alignItems = styles.alignItems || 'center'
+  styles.alignContent = styles.alignContent || 'center'
 
-  return style
+  styles.background = styles.background || 'darkgrey'
+  styles.height = styles.height || '47.5px'
+  styles.width = styles.width || '100%'
+  styles.boxShadow = styles.boxShadow || `0px 2.5px 2px ${styles.background}`
+
+  return styles
 })
 
 Bar.propTypes = {
-  style: PropTypes.object
+  styles: PropTypes.object
 }
 
 export default Bar

@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import StyledElement from './_bar'
+import StyledElement from './_barItem'
 
-const Bar = props => {
+const BarItem = props => {
   const styles = Object.assign({}, props.styles || {})
+
+  styles.fontWeight = props.primary ? 'normal' : 'lighter'
 
   return (
     <StyledElement aka-styles={styles}>
@@ -13,9 +15,10 @@ const Bar = props => {
   )
 }
 
-Bar.propTypes = {
+BarItem.propTypes = {
   children: PropTypes.any,
-  styles: PropTypes.object
+  styles: PropTypes.object,
+  primary: PropTypes.bool
 }
 
-export default Bar
+export default BarItem
