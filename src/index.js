@@ -11,9 +11,11 @@ const debug = process.env.NODE_ENV === 'production' ? null : new StyletronDebugg
 const engine = new StyletronClient()
 
 ReactDOM.render(
-  <StyletronProvider value={engine} debug={debug} debugAfterHydration>
-    <App />
-  </StyletronProvider>,
+  <React.StrictMode>
+    <StyletronProvider value={engine} debug={debug} debugAfterHydration>
+      <App />
+    </StyletronProvider>
+  </React.StrictMode>,
   document.getElementById('root')
 )
 
