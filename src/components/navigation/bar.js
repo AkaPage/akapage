@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import StyledElement from './_item'
+import StyledElement from './_bar'
 
-const Item = props => {
+const Bar = props => {
   const style = props.style || {}
 
   return (
@@ -13,9 +13,9 @@ const Item = props => {
   )
 }
 
-Item.propTypes = {
+Bar.propTypes = {
   children: PropTypes.any,
   style: PropTypes.object
 }
 
-export default Item
+export default Bar
