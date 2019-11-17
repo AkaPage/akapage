@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import StyledElement from './_container'
 
 const Container = props => {
-  const style = props.style || {}
+  const style = Object.assign({}, props.style || {})
 
   return (
     <StyledElement style={style}>

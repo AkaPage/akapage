@@ -6,7 +6,7 @@ import {
 } from '../flex'
 
 const Bar = withStyle(FlexContainer, props => {
-  const style = props.style || {}
+  const style = Object.assign({}, props.style || {})
 
   style.background = style.background || 'grey'
   style.height = style.height || '50px'

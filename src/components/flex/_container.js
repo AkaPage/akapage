@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { styled } from 'styletron-react'
 
 const Container = styled('div', props => {
-  const style = props.style || {}
+  const style = Object.assign({}, props.style || {})
 
   style.display = style.display || 'flex'
   style.flexDirection = style.flexDirection || 'row'

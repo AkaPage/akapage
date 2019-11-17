@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { styled } from 'styletron-react'
 
 const Item = styled('div', props => {
-  const style = props.style || {}
+  const style = Object.assign({}, props.style || {})
 
   style.order = style.order || 0
   /*
