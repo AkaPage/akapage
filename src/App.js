@@ -1,12 +1,14 @@
 import React from 'react'
 
+import * as FontAwesome from 'react-icons/fa'
+import 'normalize.css'
+
 import {
   Bar as NavigationBar,
   BarItem as NavigationBarItem
 } from './components/navigation'
+import { Avatar } from './components/images'
 import { Link } from './components/typography'
-
-import 'normalize.css'
 
 import './statics/stylesheets/fonts/NotoSansKR.css'
 
@@ -19,8 +21,11 @@ export default () => {
           boxShadow: 'none'
         }}
       >
-        <NavigationBarItem primary>
-          <Link href='/'>Seia-Soto</Link>
+        <NavigationBarItem>
+          <Link href='/'>
+            <FontAwesome.FaPaperPlane size={14} />
+            &nbsp; Seia-Soto
+          </Link>
         </NavigationBarItem>
       </NavigationBar>
     </div>

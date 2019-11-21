@@ -12,7 +12,7 @@ const Container = styled('a', props => {
 })
 
 Container.propTypes = {
-  styles: PropTypes.object
+  'aka-styles': PropTypes.object
 }
 
 export default Container

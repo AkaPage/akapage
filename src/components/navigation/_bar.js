@@ -8,13 +8,12 @@ import {
 const Bar = withStyle(FlexContainer, props => {
   const styles = Object.assign({}, props['aka-styles'] || {})
 
-  // NOTE: Styles to parent component
-  styles.justifyContent = styles.justifyContent || 'space-around'
-  styles.alignItems = styles.alignItems || 'center'
+  styles.alignItems = styles.alignItems || 'stretch'
   styles.alignContent = styles.alignContent || 'center'
+  styles.justifyContent = styles.justifyContent || 'center'
 
   styles.background = styles.background || 'darkgrey'
-  styles.height = styles.height || '47.5px'
+  styles.height = styles.height || '55px'
   styles.width = styles.width || '100%'
   styles.boxShadow = styles.boxShadow || `0px 2.5px 2px ${styles.background}`
 
@@ -22,7 +21,7 @@ const Bar = withStyle(FlexContainer, props => {
 })
 
 Bar.propTypes = {
-  styles: PropTypes.object
+  'aka-styles': PropTypes.object
 }
 
 export default Bar

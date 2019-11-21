@@ -10,15 +10,16 @@ const BarItem = withStyle(FlexItem, props => {
 
   styles.fontSize = styles.fontSize || '15.5px'
   styles.color = styles.color || 'white'
-  styles.textAlign = styles.textAlign || 'center'
-  styles.paddingLeft = styles.paddingLeft || '10px'
-  styles.paddingRight = styles.paddingRight || '10px'
+  styles.fontWeight = styles.fontWeight || 'lighter'
+  styles.paddingLeft = styles.paddingLeft || '14px'
+  styles.paddingRight = styles.paddingRight || '14px'
+  /* styles.textAlign = styles.textAlign || 'center' */
 
   return styles
 })
 
 BarItem.propTypes = {
-  styles: PropTypes.object
+  'aka-styles': PropTypes.object
 }
 
 export default BarItem
