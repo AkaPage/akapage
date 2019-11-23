@@ -8,9 +8,9 @@ import {
 const Bar = withStyle(FlexContainer, props => {
   const styles = Object.assign({}, props['aka-styles'] || {})
 
-  styles.alignItems = styles.alignItems || 'stretch'
+  styles.alignItems = styles.alignItems || 'center'
   styles.alignContent = styles.alignContent || 'center'
-  styles.justifyContent = styles.justifyContent || 'center'
+  styles.justifyContent = styles.justifyContent || 'flex-start'
 
   styles.background = styles.background || 'darkgrey'
   styles.height = styles.height || '55px'

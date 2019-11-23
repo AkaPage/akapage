@@ -10,7 +10,7 @@ const Item = styled('div', props => {
   styles.flexShrink = styles.flexShrink || 0
   styles.flexBasis = styles.flexBasis || 'auto'
   */
-  styles.flex = styles.flex || `${styles.flexGrow || 1} ${styles.flexShrink || 0} ${styles.flexBasis || 'auto'}`
+  styles.flex = styles.flex || `${styles.flexGrow || 0} ${styles.flexShrink || 0} ${styles.flexBasis || 'auto'}`
   styles.alignSelf = styles.alignSelf || 'flex-start'
 
   return styles
