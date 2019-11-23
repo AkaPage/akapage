@@ -53,7 +53,7 @@ export default Component
 
 ## Aka (aka)
 
-A set of special or un-common components.
+A set of special or uncommon components.
 
 ### Cover (aka.cover)
 
@@ -83,7 +83,7 @@ styles.alignContent = styles.alignContent || 'flex-start'
 
 ### Item (flex.item)
 
-A `div` element represents flex item.
+A `div` element represents a flex item.
 
 ```javascript
 styles.order = styles.order || 0
@@ -130,7 +130,7 @@ styles.boxShadow = styles.boxShadow || `0px 2.5px 2px ${styles.background}`
 
 ### BarItem (navigation.barItem extends flex.item)
 
-A `div` element represents navigation bar item based on flex item.
+A `div` element represents a navigation bar item based on a flex item.
 
 ```javascript
 styles.fontSize = styles.fontSize || '15.5px'
@@ -155,7 +155,7 @@ styles.fontWeight = styles.fontWeight || 'inherit'
 
 # Stylesheets
 
-AkaPage has some CSS files (not the CSS-in-JS) to do something globally or specially just like Google web font implementation. Insert the stylesheets after line 10 of [App.js](/src/App.js).
+AkaPage has some CSS files (not the CSS-in-JS) to do something on the site just like Google web font implementation. Insert the stylesheets after line 10 of [App.js](/src/App.js).
 
 - [fonts](/src/statics/stylesheets/fonts)
   - [Alata (default)](/src/statics/stylesheets/fonts/Alata.css)
@@ -187,10 +187,10 @@ import './statics/stylesheets/fonts/Alata.css'
 
 ## Development environment
 
-This is the environment specs from developer(Seia-Soto)'s system.
+This is the environment specs from the developer(Seia-Soto)'s system.
 
 | Software | Version | Misc |
-| : | : | : |
+| :--- | :--- | :--- |
 | [Node.JS](https://nodejs.org/) | [v8.16.2](https://nodejs.org/dist/latest-v8.x/node-v8.16.2-x64.msi) | [Download installer for i386](https://nodejs.org/dist/latest-v8.x/node-v8.16.2-x64.msi) |
 | [Yarn](https://yarnpkg.com/lang/en/) | [v1.19.1](https://github.com/yarnpkg/yarn/releases/tag/v1.19.1) | [Download installer for latest version](https://yarnpkg.com/en/docs/install) |
 | Visual Studio BuildTools | [2017](https://visualstudio.microsoft.com/ko/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15) | optional, not required |
