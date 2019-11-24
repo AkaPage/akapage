@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import StyledElement from './_fullfill'
+import StyledElement from './_filled'
 
-const Fullfill = props => {
+const Filled = props => {
   const styles = Object.assign({}, props.styles || {})
 
   styles.display = props.isActive ? 'block' : 'none'
@@ -15,10 +15,10 @@ const Fullfill = props => {
   )
 }
 
-Fullfill.propTypes = {
+Filled.propTypes = {
   children: PropTypes.any,
   styles: PropTypes.object,
   isActive: PropTypes.bool.isRequired
 }
 
-export default Fullfill
+export default Filled

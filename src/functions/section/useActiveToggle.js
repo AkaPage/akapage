@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 export default initialValue => {
   const [isActive, setActive] = useState(initialValue)
-  const onClick = event => setActive(!isActive)
+  const onEventFire = event => setActive(!isActive)
 
-  return [isActive, onClick]
+  return [isActive, onEventFire]
 }

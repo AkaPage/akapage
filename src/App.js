@@ -3,11 +3,11 @@ import { useStyletron } from 'styletron-react'
 
 import * as FontAwesome from 'react-icons/fa'
 import * as Aka from './components/aka'
-import * as Menu from './components/menu'
+import * as Section from './components/section'
 import * as Navigation from './components/navigation'
 import { Link } from './components/typography'
 
-import * as MenuFunctions from './functions/menu'
+import * as SectionFunctions from './functions/section'
 
 import 'normalize.css'
 import './statics/stylesheets/fonts/Alata.css'
@@ -16,7 +16,7 @@ import backgroundImage from './images/background-2395249.jpeg'
 
 export default () => {
   const [css] = useStyletron()
-  const [isActive, onClickToggleFullfillMenu] = MenuFunctions.useToggleFullfillMenu(true)
+  const [isActive, onClickToggleFullfillMenu] = SectionFunctions.useActiveToggle(false)
 
   return (
     <Aka.Cover>
@@ -47,7 +47,7 @@ export default () => {
           </Link>
         </Navigation.BarItem>
       </Navigation.Bar>
-      <Menu.Fullfill isActive={isActive} />
+      <Section.Filled isActive={isActive} />
       <div
         className={css({
           height: '400px',

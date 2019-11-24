@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { styled } from 'styletron-react'
 
-const Fullfill = styled('div', props => {
+const Filled = styled('div', props => {
   const styles = Object.assign({}, props['aka-styles'] || {})
 
   styles.display = styles.display || 'hidden'
@@ -13,8 +13,8 @@ const Fullfill = styled('div', props => {
   return styles
 })
 
-Fullfill.propTypes = {
+Filled.propTypes = {
   'aka-styles': PropTypes.object
 }
 
-export default Fullfill
+export default Filled

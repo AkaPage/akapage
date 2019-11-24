@@ -141,6 +141,26 @@ styles.paddingRight = styles.paddingRight || styles.paddingLeft || '16px'
 styles.textAlign = styles.textAlign || 'center'
 ```
 
+## Section (section)
+
+### Filled (section.filled)
+
+A `div` element creates a section to add some content.
+
+- Requires `isActive` boolean parameter. (Controlled via `sectionFunctions.useActiveToggle`)
+
+```javascript
+styles.display = styles.display || 'hidden'
+styles.width = styles.width || '100%'
+styles.minHeight = styles.minHeight || 'calc(100vh - 55px)' /* remove navigation bar's height */
+styles.background = styles.background || 'black'
+styles.display = styles.display || 'none'
+```
+
+```javascript
+styles.display = props.isActive ? 'block' : 'none'
+```
+
 ## typography (typography)
 
 ### Link (typography.link)
