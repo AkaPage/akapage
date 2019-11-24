@@ -13,7 +13,7 @@ A set of styled components for personal portfolio.
 
 # Components
 
-Build-in components in AkaPage.
+Built-in components in AkaPage.
 
 - All components are designed to accept the customized styles via `styles` property. The components are figured with two-layers or one-layer, which are `styled` component(from [styletron-react](https://github.com/styletron/styletron)) and optional wrapper and in wrapper layer, `styles` property will propagate with `aka-styles` property.
 
