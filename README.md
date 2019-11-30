@@ -161,7 +161,37 @@ styles.display = styles.display || 'none'
 styles.display = props.isActive ? 'block' : 'none'
 ```
 
-## typography (typography)
+## Sidebar (sidebar, experimental feature)
+
+### Menu (sidebar.menu)
+
+A `div` element creates sidebar at right side.
+
+- Requires `isActive` boolean parameter. (Controlled via `sectionFunctions.useActiveToggle`)
+
+```javascript
+styles.position = styles.position || 'fixed'
+styles.top = styles.top || 0
+styles.right = styles.right || 0
+styles.width = styles.width || '275px'
+styles.height = styles.height || '100vh'
+styles.background = styles.background || 'black'
+styles.display = styles.display || 'none'
+styles.zIndex = styles.zIndex || 11
+styles.overflow = styles.overflow || 'hidden'
+```
+
+### Pusher (sidebar.pusher)
+
+A `div` element creates a cover for sidebar.
+
+```javascript
+styles.position = styles.position || 'relative'
+styles.minHeight = styles.minHeight || styles.height || '100vh'
+styles.width = styles.width || '100%'
+```
+
+## Typography (typography)
 
 ### Link (typography.link)
 
