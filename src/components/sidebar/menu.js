@@ -1,10 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import StyledElement from './_cover'
+import StyledElement from './_menu'
 
-const Cover = props => {
+const Menu = props => {
   const styles = Object.assign({}, props.styles || {})
+
+  if (props.isActive) {
+    styles.display = styles.display || 'block'
+  }
 
   return (
     <StyledElement aka-styles={styles}>
@@ -13,9 +17,10 @@ const Cover = props => {
   )
 }
 
-Cover.propTypes = {
+Menu.propTypes = {
   children: PropTypes.any,
-  styles: PropTypes.object
+  styles: PropTypes.object,
+  isActive: PropTypes.bool.isRequired
 }
 
-export default Cover
+export default Menu

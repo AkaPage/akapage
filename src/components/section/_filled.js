@@ -6,7 +6,7 @@ const Filled = styled('div', props => {
 
   styles.display = styles.display || 'hidden'
   styles.width = styles.width || '100%'
-  styles.minHeight = styles.minHeight || 'calc(100vh - 55px)' /* remove navigation bar's height */
+  styles.minHeight = styles.minHeight || styles.height || 'calc(100vh - 55px)' /* remove navigation bar's height */
   styles.background = styles.background || 'black'
   styles.display = styles.display || 'none'
 

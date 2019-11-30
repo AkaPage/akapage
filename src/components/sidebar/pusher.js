@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import StyledElement from './_cover'
+import StyledElement from './_pusher'
 
-const Cover = props => {
+const Pusher = props => {
   const styles = Object.assign({}, props.styles || {})
 
   return (
@@ -13,9 +13,9 @@ const Cover = props => {
   )
 }
 
-Cover.propTypes = {
+Pusher.propTypes = {
   children: PropTypes.any,
   styles: PropTypes.object
 }
 
-export default Cover
+export default Pusher
